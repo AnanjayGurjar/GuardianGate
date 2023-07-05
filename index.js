@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
-const rateLimit = require("express-rate-limit");
+// const rateLimit = require("express-rate-limit");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
+
+//replaced with custom rate limiter redis
 
 // const limiter = rateLimit({
 //   windowMs: 5 * 60 * 1000, //5 requests allowed in 5 minitues
