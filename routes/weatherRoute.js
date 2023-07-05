@@ -6,6 +6,6 @@ const apicache = require("apicache");
 let cache = apicache.middleware;
 
 router.route("/test").get(test);
-router.route("/get").get(cache("2 minutes"), getWeather);
+router.route("/get").get(/*cache("2 minutes"),*/ getWeather);
 
 module.exports = router;
